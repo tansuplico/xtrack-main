@@ -21,7 +21,6 @@ app.use(cors({
     origin: "https://xtrack-main.onrender.com",
     credentials: true,
 }));
-app.use("/assets", express.static(path.join(dirname, "assets")));
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -105,6 +104,7 @@ app.post("/send_recovery_email", (req, res) => {
         .then((response) => res.send(response.message))
         .catch((error) => res.status(500).send(error.message));
 });
+app.use("/assets", express.static(path.join(dirname, "assets")));
 // Use the client app
 app.use(express.static(path.join(dirname, "../client/dist")));
 // Render client

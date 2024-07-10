@@ -31,7 +31,7 @@ const Categories = () => {
   const [editCategory, setEditCategory] = useState(false);
   const [categoryToEdit, setCategoryToEdit] = useState("");
   const [colorSelected, setColorSelected] = useState("A52A2A");
-  const [iconSelected, setIconSelected] = useState("/assets/rent.svg");
+  const [iconSelected, setIconSelected] = useState("/rent.svg");
   const [newColorSelected, setNewColorSelected] = useState("");
   const [newIconSelected, setNewIconSelected] = useState("");
   const [categoryName, setCategoryName] = useState("");
@@ -123,7 +123,7 @@ const Categories = () => {
                     src={
                       iconSelected
                         ? `https://xtrack-main.onrender.com/assets${iconSelected}`
-                        : `https://xtrack-main.onrender.com/assets/assets/rent.svg`
+                        : `https://xtrack-main.onrender.com/assets/rent.svg`
                     }
                     alt="rent"
                     className="w-[30px] h-[30px]"
