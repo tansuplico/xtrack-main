@@ -34,7 +34,7 @@ app.use(
   })
 );
 
-app.use("/assets", express.static(path.join(dirname, "assets")));
+app.use(express.static(path.join(dirname, "assets")));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());

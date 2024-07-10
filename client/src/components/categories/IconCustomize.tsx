@@ -88,150 +88,150 @@ const IconCustomize: React.FC<TIconCustomize> = ({
           <div className="grid grid-cols-5 gap-4 place-items-center">
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setIconSelected(`/assets/rent.svg`)}
+              onClick={() => setIconSelected(`/rent.svg`)}
             >
               <img
-                src={`https://xtrack-main.onrender.com/assets/rent.svg`}
+                src={`https://xtrack-main.onrender.com/rent.svg`}
                 alt="rent"
                 className="w-[26px]"
               />
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setIconSelected(`/assets/beauty.svg`)}
+              onClick={() => setIconSelected(`/beauty.svg`)}
             >
               <img
-                src={`https://xtrack-main.onrender.com/assets/beauty.svg`}
+                src={`https://xtrack-main.onrender.com/beauty.svg`}
                 alt="beauty"
                 className="w-[26px]"
               />
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setIconSelected(`/assets/bills.svg`)}
+              onClick={() => setIconSelected(`/bills.svg`)}
             >
               <img
-                src={`https://xtrack-main.onrender.com/assets/bills.svg`}
+                src={`https://xtrack-main.onrender.com/bills.svg`}
                 alt="bills"
                 className="w-[26px]"
               />
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setIconSelected(`/assets/car.svg`)}
+              onClick={() => setIconSelected(`/car.svg`)}
             >
               <img
-                src={`https://xtrack-main.onrender.com/assets/car.svg`}
+                src={`https://xtrack-main.onrender.com/car.svg`}
                 alt="car"
                 className="w-[26px]"
               />
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setIconSelected(`/assets/education.svg`)}
+              onClick={() => setIconSelected(`/education.svg`)}
             >
               <img
-                src={`https://xtrack-main.onrender.com/assets/education.svg`}
+                src={`https://xtrack-main.onrender.com/education.svg`}
                 alt="education"
                 className="w-[26px]"
               />
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setIconSelected(`/assets/entertainment.svg`)}
+              onClick={() => setIconSelected(`/entertainment.svg`)}
             >
               <img
-                src={`https://xtrack-main.onrender.com/assets/entertainment.svg`}
+                src={`https://xtrack-main.onrender.com/entertainment.svg`}
                 alt="entertainment"
                 className="w-[26px]"
               />
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setIconSelected(`/assets/food.svg`)}
+              onClick={() => setIconSelected(`/food.svg`)}
             >
               <img
-                src={`https://xtrack-main.onrender.com/assets/food.svg`}
+                src={`https://xtrack-main.onrender.com/food.svg`}
                 alt="food"
                 className="w-[26px]"
               />
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setIconSelected(`/assets/family.svg`)}
+              onClick={() => setIconSelected(`/family.svg`)}
             >
               <img
-                src={`https://xtrack-main.onrender.com/assets/family.svg`}
+                src={`https://xtrack-main.onrender.com/family.svg`}
                 alt="family"
                 className="w-[26px]"
               />
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setIconSelected(`/assets/grocery.svg`)}
+              onClick={() => setIconSelected(`/grocery.svg`)}
             >
               <img
-                src={`https://xtrack-main.onrender.com/assets/grocery.svg`}
+                src={`https://xtrack-main.onrender.com/grocery.svg`}
                 alt="grocery"
                 className="w-[26px]"
               />
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setIconSelected(`/assets/health.svg`)}
+              onClick={() => setIconSelected(`/health.svg`)}
             >
               <img
-                src={`https://xtrack-main.onrender.com/assets/health.svg`}
+                src={`https://xtrack-main.onrender.com/health.svg`}
                 alt="health"
                 className="w-[26px]"
               />
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setIconSelected(`/assets/shopping.svg`)}
+              onClick={() => setIconSelected(`/shopping.svg`)}
             >
               <img
-                src={`https://xtrack-main.onrender.com/assets/shopping.svg`}
+                src={`https://xtrack-main.onrender.com/shopping.svg`}
                 alt="shopping"
                 className="w-[26px]"
               />
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setIconSelected(`/assets/sports.svg`)}
+              onClick={() => setIconSelected(`/sports.svg`)}
             >
               <img
-                src={`https://xtrack-main.onrender.com/assets/sports.svg`}
+                src={`https://xtrack-main.onrender.com/sports.svg`}
                 alt="sports"
                 className="w-[26px]"
               />
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setIconSelected(`/assets/travel.svg`)}
+              onClick={() => setIconSelected(`/travel.svg`)}
             >
               <img
-                src={`https://xtrack-main.onrender.com/assets/travel.svg`}
+                src={`https://xtrack-main.onrender.com/travel.svg`}
                 alt="travel"
                 className="w-[26px]"
               />
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setIconSelected(`/assets/transportation.svg`)}
+              onClick={() => setIconSelected(`/transportation.svg`)}
             >
               <img
-                src={`https://xtrack-main.onrender.com/assets/transportation.svg`}
+                src={`https://xtrack-main.onrender.com/transportation.svg`}
                 alt="transportation"
                 className="w-[26px]"
               />
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setIconSelected(`/assets/work.svg`)}
+              onClick={() => setIconSelected(`/work.svg`)}
             >
               <img
-                src={`https://xtrack-main.onrender.com/assets/work.svg`}
+                src={`https://xtrack-main.onrender.com/work.svg`}
                 alt="work"
                 className="w-[26px]"
               />

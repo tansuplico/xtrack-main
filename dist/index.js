@@ -20,7 +20,7 @@ app.use(cors({
     origin: "https://xtrack-main.onrender.com",
     credentials: true,
 }));
-app.use("/assets", express.static(path.join(dirname, "assets")));
+app.use(express.static(path.join(dirname, "assets")));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
