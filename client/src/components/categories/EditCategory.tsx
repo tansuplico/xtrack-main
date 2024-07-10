@@ -63,8 +63,8 @@ const EditCategory: React.FC<TEditCategory> = ({
             <img
               src={
                 newIconSelected
-                  ? `https://xtrack-main.onrender.com${newIconSelected}`
-                  : `https://xtrack-main.onrender.com${ex.icon}`
+                  ? `https://xtrack-main.onrender.com/assets${newIconSelected}`
+                  : `https://xtrack-main.onrender.com/assets${ex.icon}`
               }
               alt="rent"
               className="w-[30px] h-[30px]"

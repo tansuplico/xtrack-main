@@ -16,15 +16,15 @@ import { fileURLToPath } from "url";
 const app = express();
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
+app.use(express.json());
 app.use(cors({
     origin: "https://xtrack-main.onrender.com",
     credentials: true,
 }));
-app.use(express.static(path.join(dirname, "assets")));
-app.use(express.json());
+app.use("/assets", express.static(path.join(dirname, "assets")));
+app.use(cookieParser());
 app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(cookieParser());
 app.use(deserializeUser);
 app.use((req, res, next) => {
     res.setTimeout(120 * 1000);

@@ -93,7 +93,7 @@ const NewIconCustomize: React.FC<TNewIconCustomize> = ({
               onClick={() => setNewIconSelected(`/rent.svg`)}
             >
               <img
-                src={`https://xtrack-main.onrender.com/rent.svg`}
+                src={`https://xtrack-main.onrender.com/assets/rent.svg`}
                 alt="rent"
                 className="w-[26px]"
               />
@@ -103,7 +103,7 @@ const NewIconCustomize: React.FC<TNewIconCustomize> = ({
               onClick={() => setNewIconSelected(`/beauty.svg`)}
             >
               <img
-                src={`https://xtrack-main.onrender.com/beauty.svg`}
+                src={`https://xtrack-main.onrender.com/assets/beauty.svg`}
                 alt="beauty"
                 className="w-[26px]"
               />
@@ -113,7 +113,7 @@ const NewIconCustomize: React.FC<TNewIconCustomize> = ({
               onClick={() => setNewIconSelected(`/bills.svg`)}
             >
               <img
-                src={`https://xtrack-main.onrender.com/bills.svg`}
+                src={`https://xtrack-main.onrender.com/assets/bills.svg`}
                 alt="bills"
                 className="w-[26px]"
               />
@@ -123,7 +123,7 @@ const NewIconCustomize: React.FC<TNewIconCustomize> = ({
               onClick={() => setNewIconSelected(`/car.svg`)}
             >
               <img
-                src={`https://xtrack-main.onrender.com/car.svg`}
+                src={`https://xtrack-main.onrender.com/assets/car.svg`}
                 alt="car"
                 className="w-[26px]"
               />
@@ -133,7 +133,7 @@ const NewIconCustomize: React.FC<TNewIconCustomize> = ({
               onClick={() => setNewIconSelected(`/education.svg`)}
             >
               <img
-                src={`https://xtrack-main.onrender.com/education.svg`}
+                src={`https://xtrack-main.onrender.com/assets/education.svg`}
                 alt="education"
                 className="w-[26px]"
               />
@@ -143,7 +143,7 @@ const NewIconCustomize: React.FC<TNewIconCustomize> = ({
               onClick={() => setNewIconSelected(`/entertainment.svg`)}
             >
               <img
-                src={`https://xtrack-main.onrender.com/entertainment.svg`}
+                src={`https://xtrack-main.onrender.com/assets/entertainment.svg`}
                 alt="entertainment"
                 className="w-[26px]"
               />
@@ -153,7 +153,7 @@ const NewIconCustomize: React.FC<TNewIconCustomize> = ({
               onClick={() => setNewIconSelected(`/food.svg`)}
             >
               <img
-                src={`https://xtrack-main.onrender.com/food.svg`}
+                src={`https://xtrack-main.onrender.com/assets/food.svg`}
                 alt="food"
                 className="w-[26px]"
               />
@@ -163,7 +163,7 @@ const NewIconCustomize: React.FC<TNewIconCustomize> = ({
               onClick={() => setNewIconSelected(`/family.svg`)}
             >
               <img
-                src={`https://xtrack-main.onrender.com/family.svg`}
+                src={`https://xtrack-main.onrender.com/assets/family.svg`}
                 alt="family"
                 className="w-[26px]"
               />
@@ -173,7 +173,7 @@ const NewIconCustomize: React.FC<TNewIconCustomize> = ({
               onClick={() => setNewIconSelected(`/grocery.svg`)}
             >
               <img
-                src={`https://xtrack-main.onrender.com/grocery.svg`}
+                src={`https://xtrack-main.onrender.com/assets/grocery.svg`}
                 alt="grocery"
                 className="w-[26px]"
               />
@@ -183,7 +183,7 @@ const NewIconCustomize: React.FC<TNewIconCustomize> = ({
               onClick={() => setNewIconSelected(`/health.svg`)}
             >
               <img
-                src={`https://xtrack-main.onrender.com/health.svg`}
+                src={`https://xtrack-main.onrender.com/assets/health.svg`}
                 alt="health"
                 className="w-[26px]"
               />
@@ -193,7 +193,7 @@ const NewIconCustomize: React.FC<TNewIconCustomize> = ({
               onClick={() => setNewIconSelected(`/shopping.svg`)}
             >
               <img
-                src={`https://xtrack-main.onrender.com/shopping.svg`}
+                src={`https://xtrack-main.onrender.com/assets/shopping.svg`}
                 alt="shopping"
                 className="w-[26px]"
               />
@@ -203,7 +203,7 @@ const NewIconCustomize: React.FC<TNewIconCustomize> = ({
               onClick={() => setNewIconSelected(`/sports.svg`)}
             >
               <img
-                src={`https://xtrack-main.onrender.com/sports.svg`}
+                src={`https://xtrack-main.onrender.com/assets/sports.svg`}
                 alt="sports"
                 className="w-[26px]"
               />
@@ -213,7 +213,7 @@ const NewIconCustomize: React.FC<TNewIconCustomize> = ({
               onClick={() => setNewIconSelected(`/travel.svg`)}
             >
               <img
-                src={`https://xtrack-main.onrender.com/travel.svg`}
+                src={`https://xtrack-main.onrender.com/assets/travel.svg`}
                 alt="travel"
                 className="w-[26px]"
               />
@@ -223,7 +223,7 @@ const NewIconCustomize: React.FC<TNewIconCustomize> = ({
               onClick={() => setNewIconSelected(`/transportation.svg`)}
             >
               <img
-                src={`https://xtrack-main.onrender.com/transportation.svg`}
+                src={`https://xtrack-main.onrender.com/assets/transportation.svg`}
                 alt="transportation"
                 className="w-[26px]"
               />
@@ -233,7 +233,7 @@ const NewIconCustomize: React.FC<TNewIconCustomize> = ({
               onClick={() => setNewIconSelected(`/work.svg`)}
             >
               <img
-                src={`https://xtrack-main.onrender.com/work.svg`}
+                src={`https://xtrack-main.onrender.com/assets/work.svg`}
                 alt="work"
                 className="w-[26px]"
               />
