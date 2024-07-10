@@ -31,10 +31,6 @@ app.use((req, res, next) => {
     req.setTimeout(120 * 1000);
     next();
 });
-// Use the client app
-app.use(express.static(path.join(dirname, "../client/dist")));
-// Render client
-app.get("*", (req, res) => res.sendFile(path.join(dirname, "../client/dist/index.html")));
 function sendEmail({ recipient_email, OTP, }) {
     return new Promise((resolve, reject) => {
         var transporter = createTransport({
@@ -109,6 +105,10 @@ app.post("/send_recovery_email", (req, res) => {
         .then((response) => res.send(response.message))
         .catch((error) => res.status(500).send(error.message));
 });
+// Use the client app
+app.use(express.static(path.join(dirname, "../client/dist")));
+// Render client
+app.get("*", (req, res) => res.sendFile(path.join(dirname, "../client/dist/index.html")));
 if (!process.env.MONGODB_CONNECTION_STRING) {
     throw new Error("MONGODB_CONNECTION_STRING is not defined in .env file");
 }
