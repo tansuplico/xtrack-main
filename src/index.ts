@@ -33,6 +33,7 @@ app.use(
     credentials: true,
   })
 );
+
 app.use("/assets", express.static(path.join(dirname, "assets")));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
