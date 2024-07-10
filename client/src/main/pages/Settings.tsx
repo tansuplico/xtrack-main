@@ -10,7 +10,7 @@ const Settings = () => {
   const { setShowSidebar } = useOutletContext<{
     setShowSidebar: React.Dispatch<React.SetStateAction<boolean>>;
   }>();
-  const { data: getUser } = useGetUser();
+  const { data: getUser, isLoading } = useGetUser();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [repassword, setRepassword] = useState("");
@@ -66,6 +66,7 @@ const Settings = () => {
                 email={email}
                 setChangePasswordMode={setChangePasswordMode}
                 changePasswordMode={changePasswordMode}
+                isLoading={isLoading}
               />
             )}
           </div>

@@ -74,7 +74,7 @@ export const getUser = async () => {
       }
     );
 
-    return response.data;
+    return response.data || [];
   } catch (error: any) {
     throw new Error(
       error.response.data.error || "There was a problem with the server."
@@ -106,7 +106,7 @@ export const getCategories = async () => {
       }
     );
 
-    return response.data;
+    return response.data || [];
   } catch (error: any) {
     throw new Error(
       error.response.data.error || "There was a problem with the server."
@@ -188,7 +188,7 @@ export const getTransactions = async () => {
       }
     );
 
-    return response.data;
+    return response.data || [];
   } catch (error: any) {
     throw new Error(
       error.response.data.error || "There was a problem with the server."
@@ -262,7 +262,7 @@ export const getWallet = async () => {
       }
     );
 
-    return response.data;
+    return response.data || [];
   } catch (error: any) {
     throw new Error(
       error.response.data.error || "There was a problem with the server."

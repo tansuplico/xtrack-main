@@ -14,6 +14,7 @@ const AccountDetails: React.FC<TAccountDetails> = ({
   email,
   setChangePasswordMode,
   changePasswordMode,
+  isLoading,
 }) => {
   const { mutateAsync: modifyUsername } = useModifyProfile();
 
@@ -63,7 +64,7 @@ const AccountDetails: React.FC<TAccountDetails> = ({
             className="w-full py-4 pl-5 bg-transparent focus:outline-none"
             placeholder="Username"
             onChange={(e) => setUsername(e.currentTarget.value)}
-            value={username}
+            value={isLoading ? "Loading... " : username}
           />
         </div>
       </div>
@@ -71,7 +72,9 @@ const AccountDetails: React.FC<TAccountDetails> = ({
       <div>
         <span className="text-[.8rem]"> Email </span>
         <div className="bg-[#1A222B] rounded-md">
-          <h1 className="py-4 pl-5 bg-transparent">{email}</h1>
+          <h1 className="py-4 pl-5 bg-transparent">
+            {isLoading ? "Loading... " : email}
+          </h1>
         </div>
       </div>
 

@@ -203,6 +203,7 @@ export type TAccountDetails = {
   email: string;
   setChangePasswordMode: (changePasswordMode: boolean) => void;
   changePasswordMode: boolean;
+  isLoading: boolean;
 };
 
 export type TChartComponentProps = {
