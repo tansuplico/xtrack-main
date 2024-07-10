@@ -16,6 +16,13 @@ import { fileURLToPath } from "url";
 const app = express();
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
+app.use("/assets", express.static(path.join(dirname, "assets"), {
+    setHeaders: (res, path) => {
+        if (path.endsWith(".svg")) {
+            res.setHeader("Content-Type", "image/svg+xml");
+        }
+    },
+}));
 app.use(express.json());
 app.use(cors({
     origin: "https://xtrack-main.onrender.com",
@@ -104,13 +111,6 @@ app.post("/send_recovery_email", (req, res) => {
         .then((response) => res.send(response.message))
         .catch((error) => res.status(500).send(error.message));
 });
-app.use("/assets", express.static(path.join(dirname, "assets"), {
-    setHeaders: (res, path) => {
-        if (path.endsWith(".svg")) {
-            res.setHeader("Content-Type", "image/svg+xml");
-        }
-    },
-}));
 // Use the client app
 app.use(express.static(path.join(dirname, "../client/dist")));
 // Render client

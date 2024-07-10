@@ -27,6 +27,17 @@ interface EmailResponse {
   message: string;
 }
 
+app.use(
+  "/assets",
+  express.static(path.join(dirname, "assets"), {
+    setHeaders: (res, path) => {
+      if (path.endsWith(".svg")) {
+        res.setHeader("Content-Type", "image/svg+xml");
+      }
+    },
+  })
+);
+
 app.use(express.json());
 app.use(
   cors({
@@ -126,16 +137,6 @@ app.post("/send_recovery_email", (req, res) => {
     .catch((error) => res.status(500).send(error.message));
 });
 
-app.use(
-  "/assets",
-  express.static(path.join(dirname, "assets"), {
-    setHeaders: (res, path) => {
-      if (path.endsWith(".svg")) {
-        res.setHeader("Content-Type", "image/svg+xml");
-      }
-    },
-  })
-);
 // Use the client app
 app.use(express.static(path.join(dirname, "../client/dist")));
 
