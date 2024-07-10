@@ -46,7 +46,7 @@ const TransactionForm: React.FC<TTransactionForm> = ({
                       className={`w-[40px] h-[40px] bg-[#${categoryChoice.color}] flex justify-center items-center rounded-full`}
                     >
                       <img
-                        src={`http://localhost:5000${categoryChoice.icon}`}
+                        src={`https://xtrack-main.onrender.com${categoryChoice.icon}`}
                         alt={`${categoryChoice.icon}`}
                         className="w-[24px] h-[24px]"
                       />
@@ -121,7 +121,7 @@ const TransactionForm: React.FC<TTransactionForm> = ({
                           className={`w-[40px] h-[40px] flex justify-center items-center bg-[#${ex.color}] rounded-full`}
                         >
                           <img
-                            src={`http://localhost:5000${ex.icon}`}
+                            src={`https://xtrack-main.onrender.com${ex.icon}`}
                             alt={ex.category}
                             className="w-[24px] h-[24px]"
                           />
@@ -156,7 +156,7 @@ const TransactionForm: React.FC<TTransactionForm> = ({
                           className={`w-[40px] h-[40px] flex justify-center items-center bg-[#${inc.color}] rounded-full`}
                         >
                           <img
-                            src={`http://localhost:5000${inc.icon}`}
+                            src={`https://xtrack-main.onrender.com${inc.icon}`}
                             alt={inc.category}
                             className="w-[24px] h-[24px]"
                           />

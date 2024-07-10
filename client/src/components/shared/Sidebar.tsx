@@ -56,7 +56,7 @@ const Sidebar: React.FC<SidebarProps> = ({
             <img
               src={
                 profileImage
-                  ? `https://xtrack-main.onrender.com/${profileImage}`
+                  ? `https://xtrack-main.onrender.com${profileImage}`
                   : `https://xtrack-main.onrender.com/male-one.svg`
               }
               alt="profile"
