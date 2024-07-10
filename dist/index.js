@@ -17,7 +17,7 @@ const app = express();
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://xtrack-main.onrender.com",
     credentials: true,
 }));
 app.use("/assets", express.static(path.join(dirname, "assets")));

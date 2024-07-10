@@ -9,7 +9,7 @@ export const userSignUp = async (userData: TUserData) => {
 
   try {
     const response = await axios.post(
-      "http://localhost:5000/user/signup",
+      "https://xtrack-main.onrender.com/user/signup",
       userData,
       {
         withCredentials: true,
@@ -33,7 +33,7 @@ export const userLogin = async (
 
   try {
     const response = await axios.post(
-      "http://localhost:5000/user/login",
+      "https://xtrack-main.onrender.com/user/login",
       userData,
       {
         withCredentials: true,
@@ -50,9 +50,12 @@ export const userLogin = async (
 
 export const userLogout = async () => {
   try {
-    const response = await axios.delete("http://localhost:5000/user/logout", {
-      withCredentials: true,
-    });
+    const response = await axios.delete(
+      "https://xtrack-main.onrender.com/user/logout",
+      {
+        withCredentials: true,
+      }
+    );
 
     return response;
   } catch (error: any) {
@@ -64,9 +67,12 @@ export const userLogout = async () => {
 
 export const getUser = async () => {
   try {
-    const response = await axios.get("http://localhost:5000/user/user", {
-      withCredentials: true,
-    });
+    const response = await axios.get(
+      "https://xtrack-main.onrender.com/user/user",
+      {
+        withCredentials: true,
+      }
+    );
 
     return response.data;
   } catch (error: any) {
@@ -78,9 +84,12 @@ export const getUser = async () => {
 // Auth
 export const checkAuth = async () => {
   try {
-    const response = await axios.get("http://localhost:5000/api/session", {
-      withCredentials: true,
-    });
+    const response = await axios.get(
+      "https://xtrack-main.onrender.com/api/session",
+      {
+        withCredentials: true,
+      }
+    );
     return response.status === 200;
   } catch (error: any) {
     return false;
@@ -91,7 +100,7 @@ export const checkAuth = async () => {
 export const getCategories = async () => {
   try {
     const response = await axios.get(
-      "http://localhost:5000/categories/categories",
+      "https://xtrack-main.onrender.com/categories/categories",
       {
         withCredentials: true,
       }
@@ -115,7 +124,7 @@ export const modifyCategories = async (
 ) => {
   try {
     const response = await axios.put(
-      "http://localhost:5000/categories/modify-categories",
+      "https://xtrack-main.onrender.com/categories/modify-categories",
       { type, category, existing, newName, newColor, newIcon },
       { withCredentials: true }
     );
@@ -136,7 +145,7 @@ export const addCategories = async (
 ) => {
   try {
     const response = await axios.post(
-      "http://localhost:5000/categories/create-category",
+      "https://xtrack-main.onrender.com/categories/create-category",
       {
         colorPicked,
         iconPicked,
@@ -157,7 +166,7 @@ export const addCategories = async (
 export const deleteCategories = async (categoryName: string, type: string) => {
   try {
     const response = await axios.delete(
-      "http://localhost:5000/categories/delete-categories",
+      "https://xtrack-main.onrender.com/categories/delete-categories",
       { data: { categoryName, type }, withCredentials: true }
     );
 
@@ -173,7 +182,7 @@ export const deleteCategories = async (categoryName: string, type: string) => {
 export const getTransactions = async () => {
   try {
     const response = await axios.get(
-      "http://localhost:5000/transactions/transactions",
+      "https://xtrack-main.onrender.com/transactions/transactions",
       {
         withCredentials: true,
       }
@@ -195,7 +204,7 @@ export const addTransactions = async (
 ) => {
   try {
     const response = await axios.post(
-      "http://localhost:5000/transactions/add-transactions",
+      "https://xtrack-main.onrender.com/transactions/add-transactions",
       { data: { categoryData, amount, date, currency } },
       { withCredentials: true }
     );
@@ -211,7 +220,7 @@ export const addTransactions = async (
 export const clearHistory = async () => {
   try {
     const response = await axios.put(
-      "http://localhost:5000/transactions/clear-history",
+      "https://xtrack-main.onrender.com/transactions/clear-history",
       {},
       { withCredentials: true }
     );
@@ -231,7 +240,7 @@ export const removeTransaction = async (
 ) => {
   try {
     const response = await axios.delete(
-      "http://localhost:5000/transactions/remove-transaction",
+      "https://xtrack-main.onrender.com/transactions/remove-transaction",
       { data: { id, type, category }, withCredentials: true }
     );
 
@@ -246,9 +255,12 @@ export const removeTransaction = async (
 // Wallet
 export const getWallet = async () => {
   try {
-    const response = await axios.get("http://localhost:5000/wallet/wallet", {
-      withCredentials: true,
-    });
+    const response = await axios.get(
+      "https://xtrack-main.onrender.com/wallet/wallet",
+      {
+        withCredentials: true,
+      }
+    );
 
     return response.data;
   } catch (error: any) {
@@ -261,7 +273,7 @@ export const getWallet = async () => {
 export const modifyBalance = async (balance: number) => {
   try {
     const response = await axios.post(
-      "http://localhost:5000/wallet/update-balance",
+      "https://xtrack-main.onrender.com/wallet/update-balance",
       { balance },
       { withCredentials: true }
     );
@@ -277,7 +289,7 @@ export const modifyBalance = async (balance: number) => {
 export const modifyIncome = async (income: number, changeData: Object) => {
   try {
     const response = await axios.post(
-      "http://localhost:5000/wallet/update-income",
+      "https://xtrack-main.onrender.com/wallet/update-income",
       { income, changeData },
       { withCredentials: true }
     );
@@ -293,7 +305,7 @@ export const modifyIncome = async (income: number, changeData: Object) => {
 export const modifyProfile = async (username: string, image: string) => {
   try {
     const response = await axios.post(
-      "http://localhost:5000/wallet/update-profile",
+      "https://xtrack-main.onrender.com/wallet/update-profile",
       { username, image },
       { withCredentials: true }
     );
@@ -309,7 +321,7 @@ export const modifyProfile = async (username: string, image: string) => {
 export const modifyPassword = async (password: string, repassword: string) => {
   try {
     const response = await axios.post(
-      "http://localhost:5000/wallet/update-password",
+      "https://xtrack-main.onrender.com/wallet/update-password",
       { password, repassword },
       { withCredentials: true }
     );
@@ -329,7 +341,7 @@ export const resetPassword = async (
 ) => {
   try {
     const response = await axios.post(
-      "http://localhost:5000/wallet/change-password",
+      "https://xtrack-main.onrender.com/wallet/change-password",
       { password, repassword, email },
       { withCredentials: true }
     );

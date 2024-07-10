@@ -14,7 +14,7 @@ const OTPInput = () => {
   const resendOTP = () => {
     if (disable) return;
     axios
-      .post("http://localhost:5000/send_recovery_email", {
+      .post("https://xtrack-main.onrender.com/send_recovery_email", {
         OTP: otp,
         recipient_email: email,
       })

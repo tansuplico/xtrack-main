@@ -29,7 +29,7 @@ interface EmailResponse {
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://xtrack-main.onrender.com",
     credentials: true,
   })
 );
