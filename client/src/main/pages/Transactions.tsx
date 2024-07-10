@@ -39,13 +39,6 @@ const Transactions = () => {
   const [balance, setBalance] = useState(0);
   const [expense, setExpense] = useState(0);
 
-  console.log(income);
-  console.log(balance);
-  console.log(expense);
-
-  console.log(walletData);
-  console.log(transactionArr);
-
   useEffect(() => {
     if (walletData) {
       setBalance(walletData[0].balance);
