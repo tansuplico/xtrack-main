@@ -91,7 +91,7 @@ const IconCustomize: React.FC<TIconCustomize> = ({
               onClick={() => setIconSelected(`/assets/rent.svg`)}
             >
               <img
-                src={`http://localhost:5000/assets/rent.svg`}
+                src={`https://xtrack-main.onrender.com/assets/rent.svg`}
                 alt="rent"
                 className="w-[26px]"
               />
@@ -101,7 +101,7 @@ const IconCustomize: React.FC<TIconCustomize> = ({
               onClick={() => setIconSelected(`/assets/beauty.svg`)}
             >
               <img
-                src={`http://localhost:5000/assets/beauty.svg`}
+                src={`https://xtrack-main.onrender.com/assets/beauty.svg`}
                 alt="beauty"
                 className="w-[26px]"
               />
@@ -111,7 +111,7 @@ const IconCustomize: React.FC<TIconCustomize> = ({
               onClick={() => setIconSelected(`/assets/bills.svg`)}
             >
               <img
-                src={`http://localhost:5000/assets/bills.svg`}
+                src={`https://xtrack-main.onrender.com/assets/bills.svg`}
                 alt="bills"
                 className="w-[26px]"
               />
@@ -121,7 +121,7 @@ const IconCustomize: React.FC<TIconCustomize> = ({
               onClick={() => setIconSelected(`/assets/car.svg`)}
             >
               <img
-                src={`http://localhost:5000/assets/car.svg`}
+                src={`https://xtrack-main.onrender.com/assets/car.svg`}
                 alt="car"
                 className="w-[26px]"
               />
@@ -131,7 +131,7 @@ const IconCustomize: React.FC<TIconCustomize> = ({
               onClick={() => setIconSelected(`/assets/education.svg`)}
             >
               <img
-                src={`http://localhost:5000/assets/education.svg`}
+                src={`https://xtrack-main.onrender.com/assets/education.svg`}
                 alt="education"
                 className="w-[26px]"
               />
@@ -141,7 +141,7 @@ const IconCustomize: React.FC<TIconCustomize> = ({
               onClick={() => setIconSelected(`/assets/entertainment.svg`)}
             >
               <img
-                src={`http://localhost:5000/assets/entertainment.svg`}
+                src={`https://xtrack-main.onrender.com/assets/entertainment.svg`}
                 alt="entertainment"
                 className="w-[26px]"
               />
@@ -151,7 +151,7 @@ const IconCustomize: React.FC<TIconCustomize> = ({
               onClick={() => setIconSelected(`/assets/food.svg`)}
             >
               <img
-                src={`http://localhost:5000/assets/food.svg`}
+                src={`https://xtrack-main.onrender.com/assets/food.svg`}
                 alt="food"
                 className="w-[26px]"
               />
@@ -161,7 +161,7 @@ const IconCustomize: React.FC<TIconCustomize> = ({
               onClick={() => setIconSelected(`/assets/family.svg`)}
             >
               <img
-                src={`http://localhost:5000/assets/family.svg`}
+                src={`https://xtrack-main.onrender.com/assets/family.svg`}
                 alt="family"
                 className="w-[26px]"
               />
@@ -171,7 +171,7 @@ const IconCustomize: React.FC<TIconCustomize> = ({
               onClick={() => setIconSelected(`/assets/grocery.svg`)}
             >
               <img
-                src={`http://localhost:5000/assets/grocery.svg`}
+                src={`https://xtrack-main.onrender.com/assets/grocery.svg`}
                 alt="grocery"
                 className="w-[26px]"
               />
@@ -181,7 +181,7 @@ const IconCustomize: React.FC<TIconCustomize> = ({
               onClick={() => setIconSelected(`/assets/health.svg`)}
             >
               <img
-                src={`http://localhost:5000/assets/health.svg`}
+                src={`https://xtrack-main.onrender.com/assets/health.svg`}
                 alt="health"
                 className="w-[26px]"
               />
@@ -191,7 +191,7 @@ const IconCustomize: React.FC<TIconCustomize> = ({
               onClick={() => setIconSelected(`/assets/shopping.svg`)}
             >
               <img
-                src={`http://localhost:5000/assets/shopping.svg`}
+                src={`https://xtrack-main.onrender.com/assets/shopping.svg`}
                 alt="shopping"
                 className="w-[26px]"
               />
@@ -201,7 +201,7 @@ const IconCustomize: React.FC<TIconCustomize> = ({
               onClick={() => setIconSelected(`/assets/sports.svg`)}
             >
               <img
-                src={`http://localhost:5000/assets/sports.svg`}
+                src={`https://xtrack-main.onrender.com/assets/sports.svg`}
                 alt="sports"
                 className="w-[26px]"
               />
@@ -211,7 +211,7 @@ const IconCustomize: React.FC<TIconCustomize> = ({
               onClick={() => setIconSelected(`/assets/travel.svg`)}
             >
               <img
-                src={`http://localhost:5000/assets/travel.svg`}
+                src={`https://xtrack-main.onrender.com/assets/travel.svg`}
                 alt="travel"
                 className="w-[26px]"
               />
@@ -221,7 +221,7 @@ const IconCustomize: React.FC<TIconCustomize> = ({
               onClick={() => setIconSelected(`/assets/transportation.svg`)}
             >
               <img
-                src={`http://localhost:5000/assets/transportation.svg`}
+                src={`https://xtrack-main.onrender.com/assets/transportation.svg`}
                 alt="transportation"
                 className="w-[26px]"
               />
@@ -231,7 +231,7 @@ const IconCustomize: React.FC<TIconCustomize> = ({
               onClick={() => setIconSelected(`/assets/work.svg`)}
             >
               <img
-                src={`http://localhost:5000/assets/work.svg`}
+                src={`https://xtrack-main.onrender.com/assets/work.svg`}
                 alt="work"
                 className="w-[26px]"
               />
