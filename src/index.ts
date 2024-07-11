@@ -13,6 +13,8 @@ import categoryRouter from "./routes/categoriesRoutes.js";
 import transactionRouter from "./routes/transactionsRoutes.js";
 import walletRouter from "./routes/walletRoutes.js";
 import { fileURLToPath } from "url";
+import serveStatic from "serve-static";
+import mime from "mime";
 
 const app = express();
 const filename = fileURLToPath(import.meta.url);
@@ -29,11 +31,10 @@ interface EmailResponse {
 
 app.use(
   "/assets",
-  express.static(path.join(dirname, "assets"), {
+  serveStatic(path.join(dirname, "assets"), {
     setHeaders: (res, path) => {
-      if (path.endsWith(".svg")) {
-        res.setHeader("Content-Type", "image/svg+xml");
-      }
+      const contentType = mime.getType(path);
+      res.setHeader("Content-Type", contentType || "application/octet-stream");
     },
   })
 );
