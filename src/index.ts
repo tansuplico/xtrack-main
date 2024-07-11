@@ -31,10 +31,11 @@ interface EmailResponse {
 
 app.use(
   "/assets",
-  serveStatic(path.join(dirname + "/assets"), {
+  express.static(path.join(dirname, "assets"), {
     setHeaders: (res, path) => {
-      const contentType = mime.getType(path);
-      res.setHeader("Content-Type", contentType || "image/svg+xml");
+      if (path.endsWith(".svg")) {
+        res.setHeader("Content-Type", "image/svg+xml");
+      }
     },
   })
 );
