@@ -18,10 +18,10 @@ import mime from "mime";
 const app = express();
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
-app.use("/assets", serveStatic(path.join(dirname, "assets"), {
+app.use("/assets", serveStatic(path.join(dirname + "/assets"), {
     setHeaders: (res, path) => {
         const contentType = mime.getType(path);
-        res.setHeader("Content-Type", contentType || "application/octet-stream");
+        res.setHeader("Content-Type", contentType || "image/svg+xml");
     },
 }));
 app.use(express.json());
