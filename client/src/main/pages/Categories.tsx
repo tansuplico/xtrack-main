@@ -122,7 +122,7 @@ const Categories = () => {
                   <img
                     src={
                       iconSelected
-                        ? `https://xtrack-main.onrender.com/assets${iconSelected}`
+                        ? iconSelected
                         : `https://xtrack-main.onrender.com/assets/rent.svg`
                     }
                     alt="rent"
@@ -223,7 +223,7 @@ const Categories = () => {
                               <Loader />
                             ) : (
                               <img
-                                src={`https://xtrack-main.onrender.com/assets${ex.icon}`}
+                                src={ex.icon}
                                 alt="rent"
                                 className="w-[30px] h-[30px]"
                               />
@@ -324,7 +324,7 @@ const Categories = () => {
                               <Loader />
                             ) : (
                               <img
-                                src={`https://xtrack-main.onrender.com/assets${ex.icon}`}
+                                src={ex.icon}
                                 alt="rent"
                                 className="w-[30px] h-[30px]"
                               />

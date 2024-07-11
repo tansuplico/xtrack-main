@@ -61,11 +61,7 @@ const EditCategory: React.FC<TEditCategory> = ({
             }] rounded-full cursor-pointer`}
           >
             <img
-              src={
-                newIconSelected
-                  ? `https://xtrack-main.onrender.com/assets${newIconSelected}`
-                  : `https://xtrack-main.onrender.com/assets${ex.icon}`
-              }
+              src={newIconSelected ? newIconSelected : ex.icon}
               alt="rent"
               className="w-[30px] h-[30px]"
               onClick={() => setShowNewIconCustomize(!showNewIconCustomize)}

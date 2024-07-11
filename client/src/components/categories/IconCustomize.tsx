@@ -88,7 +88,11 @@ const IconCustomize: React.FC<TIconCustomize> = ({
           <div className="grid grid-cols-5 gap-4 place-items-center">
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setIconSelected(`/rent.svg`)}
+              onClick={() =>
+                setIconSelected(
+                  `https://xtrack-main.onrender.com/assets/rent.svg`
+                )
+              }
             >
               <img
                 src={`https://xtrack-main.onrender.com/assets/rent.svg`}
@@ -98,7 +102,11 @@ const IconCustomize: React.FC<TIconCustomize> = ({
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setIconSelected(`/beauty.svg`)}
+              onClick={() =>
+                setIconSelected(
+                  `https://xtrack-main.onrender.com/assets/beauty.svg`
+                )
+              }
             >
               <img
                 src={`https://xtrack-main.onrender.com/assets/beauty.svg`}
@@ -108,7 +116,11 @@ const IconCustomize: React.FC<TIconCustomize> = ({
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setIconSelected(`/bills.svg`)}
+              onClick={() =>
+                setIconSelected(
+                  `https://xtrack-main.onrender.com/assets/bills.svg`
+                )
+              }
             >
               <img
                 src={`https://xtrack-main.onrender.com/assets/bills.svg`}
@@ -118,7 +130,11 @@ const IconCustomize: React.FC<TIconCustomize> = ({
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setIconSelected(`/car.svg`)}
+              onClick={() =>
+                setIconSelected(
+                  `https://xtrack-main.onrender.com/assets/car.svg`
+                )
+              }
             >
               <img
                 src={`https://xtrack-main.onrender.com/assets/car.svg`}
@@ -128,7 +144,11 @@ const IconCustomize: React.FC<TIconCustomize> = ({
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setIconSelected(`/education.svg`)}
+              onClick={() =>
+                setIconSelected(
+                  `https://xtrack-main.onrender.com/assets/education.svg`
+                )
+              }
             >
               <img
                 src={`https://xtrack-main.onrender.com/assets/education.svg`}
@@ -138,7 +158,11 @@ const IconCustomize: React.FC<TIconCustomize> = ({
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setIconSelected(`/entertainment.svg`)}
+              onClick={() =>
+                setIconSelected(
+                  `https://xtrack-main.onrender.com/assets/entertainment.svg`
+                )
+              }
             >
               <img
                 src={`https://xtrack-main.onrender.com/assets/entertainment.svg`}
@@ -148,7 +172,11 @@ const IconCustomize: React.FC<TIconCustomize> = ({
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setIconSelected(`/food.svg`)}
+              onClick={() =>
+                setIconSelected(
+                  `https://xtrack-main.onrender.com/assets/food.svg`
+                )
+              }
             >
               <img
                 src={`https://xtrack-main.onrender.com/assets/food.svg`}
@@ -158,7 +186,11 @@ const IconCustomize: React.FC<TIconCustomize> = ({
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setIconSelected(`/family.svg`)}
+              onClick={() =>
+                setIconSelected(
+                  `https://xtrack-main.onrender.com/assets/family.svg`
+                )
+              }
             >
               <img
                 src={`https://xtrack-main.onrender.com/assets/family.svg`}
@@ -168,7 +200,11 @@ const IconCustomize: React.FC<TIconCustomize> = ({
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setIconSelected(`/grocery.svg`)}
+              onClick={() =>
+                setIconSelected(
+                  `https://xtrack-main.onrender.com/assets/grocery.svg`
+                )
+              }
             >
               <img
                 src={`https://xtrack-main.onrender.com/assets/grocery.svg`}
@@ -178,7 +214,11 @@ const IconCustomize: React.FC<TIconCustomize> = ({
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setIconSelected(`/health.svg`)}
+              onClick={() =>
+                setIconSelected(
+                  `https://xtrack-main.onrender.com/assets/health.svg`
+                )
+              }
             >
               <img
                 src={`https://xtrack-main.onrender.com/assets/health.svg`}
@@ -188,7 +228,11 @@ const IconCustomize: React.FC<TIconCustomize> = ({
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setIconSelected(`/shopping.svg`)}
+              onClick={() =>
+                setIconSelected(
+                  `https://xtrack-main.onrender.com/assets/shopping.svg`
+                )
+              }
             >
               <img
                 src={`https://xtrack-main.onrender.com/assets/shopping.svg`}
@@ -198,7 +242,11 @@ const IconCustomize: React.FC<TIconCustomize> = ({
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setIconSelected(`/sports.svg`)}
+              onClick={() =>
+                setIconSelected(
+                  `https://xtrack-main.onrender.com/assets/sports.svg`
+                )
+              }
             >
               <img
                 src={`https://xtrack-main.onrender.com/assets/sports.svg`}
@@ -208,7 +256,11 @@ const IconCustomize: React.FC<TIconCustomize> = ({
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setIconSelected(`/travel.svg`)}
+              onClick={() =>
+                setIconSelected(
+                  `https://xtrack-main.onrender.com/assets/travel.svg`
+                )
+              }
             >
               <img
                 src={`https://xtrack-main.onrender.com/assets/travel.svg`}
@@ -218,7 +270,11 @@ const IconCustomize: React.FC<TIconCustomize> = ({
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setIconSelected(`/transportation.svg`)}
+              onClick={() =>
+                setIconSelected(
+                  `https://xtrack-main.onrender.com/assets/transportation.svg`
+                )
+              }
             >
               <img
                 src={`https://xtrack-main.onrender.com/assets/transportation.svg`}
@@ -228,7 +284,11 @@ const IconCustomize: React.FC<TIconCustomize> = ({
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setIconSelected(`/work.svg`)}
+              onClick={() =>
+                setIconSelected(
+                  `https://xtrack-main.onrender.com/assets/work.svg`
+                )
+              }
             >
               <img
                 src={`https://xtrack-main.onrender.com/assets/work.svg`}

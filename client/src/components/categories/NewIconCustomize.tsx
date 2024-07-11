@@ -90,7 +90,11 @@ const NewIconCustomize: React.FC<TNewIconCustomize> = ({
           <div className="grid grid-cols-5 gap-4 place-items-center">
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setNewIconSelected(`/rent.svg`)}
+              onClick={() =>
+                setNewIconSelected(
+                  `https://xtrack-main.onrender.com/assets/rent.svg`
+                )
+              }
             >
               <img
                 src={`https://xtrack-main.onrender.com/assets/rent.svg`}
@@ -110,7 +114,11 @@ const NewIconCustomize: React.FC<TNewIconCustomize> = ({
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setNewIconSelected(`/bills.svg`)}
+              onClick={() =>
+                setNewIconSelected(
+                  `https://xtrack-main.onrender.com/assets/bills.svg`
+                )
+              }
             >
               <img
                 src={`https://xtrack-main.onrender.com/assets/bills.svg`}
@@ -120,7 +128,11 @@ const NewIconCustomize: React.FC<TNewIconCustomize> = ({
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setNewIconSelected(`/car.svg`)}
+              onClick={() =>
+                setNewIconSelected(
+                  `https://xtrack-main.onrender.com/assets/car.svg`
+                )
+              }
             >
               <img
                 src={`https://xtrack-main.onrender.com/assets/car.svg`}
@@ -130,7 +142,11 @@ const NewIconCustomize: React.FC<TNewIconCustomize> = ({
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setNewIconSelected(`/education.svg`)}
+              onClick={() =>
+                setNewIconSelected(
+                  `https://xtrack-main.onrender.com/assets/education.svg`
+                )
+              }
             >
               <img
                 src={`https://xtrack-main.onrender.com/assets/education.svg`}
@@ -140,7 +156,11 @@ const NewIconCustomize: React.FC<TNewIconCustomize> = ({
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setNewIconSelected(`/entertainment.svg`)}
+              onClick={() =>
+                setNewIconSelected(
+                  `https://xtrack-main.onrender.com/assets/entertainment.svg`
+                )
+              }
             >
               <img
                 src={`https://xtrack-main.onrender.com/assets/entertainment.svg`}
@@ -150,7 +170,11 @@ const NewIconCustomize: React.FC<TNewIconCustomize> = ({
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setNewIconSelected(`/food.svg`)}
+              onClick={() =>
+                setNewIconSelected(
+                  `https://xtrack-main.onrender.com/assets/food.svg`
+                )
+              }
             >
               <img
                 src={`https://xtrack-main.onrender.com/assets/food.svg`}
@@ -160,7 +184,11 @@ const NewIconCustomize: React.FC<TNewIconCustomize> = ({
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setNewIconSelected(`/family.svg`)}
+              onClick={() =>
+                setNewIconSelected(
+                  `https://xtrack-main.onrender.com/assets/family.svg`
+                )
+              }
             >
               <img
                 src={`https://xtrack-main.onrender.com/assets/family.svg`}
@@ -170,7 +198,11 @@ const NewIconCustomize: React.FC<TNewIconCustomize> = ({
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setNewIconSelected(`/grocery.svg`)}
+              onClick={() =>
+                setNewIconSelected(
+                  `https://xtrack-main.onrender.com/assets/grocery.svg`
+                )
+              }
             >
               <img
                 src={`https://xtrack-main.onrender.com/assets/grocery.svg`}
@@ -180,7 +212,11 @@ const NewIconCustomize: React.FC<TNewIconCustomize> = ({
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setNewIconSelected(`/health.svg`)}
+              onClick={() =>
+                setNewIconSelected(
+                  `https://xtrack-main.onrender.com/assets/health.svg`
+                )
+              }
             >
               <img
                 src={`https://xtrack-main.onrender.com/assets/health.svg`}
@@ -190,7 +226,11 @@ const NewIconCustomize: React.FC<TNewIconCustomize> = ({
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setNewIconSelected(`/shopping.svg`)}
+              onClick={() =>
+                setNewIconSelected(
+                  `https://xtrack-main.onrender.com/assets/shopping.svg`
+                )
+              }
             >
               <img
                 src={`https://xtrack-main.onrender.com/assets/shopping.svg`}
@@ -200,7 +240,11 @@ const NewIconCustomize: React.FC<TNewIconCustomize> = ({
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setNewIconSelected(`/sports.svg`)}
+              onClick={() =>
+                setNewIconSelected(
+                  `https://xtrack-main.onrender.com/assets/sports.svg`
+                )
+              }
             >
               <img
                 src={`https://xtrack-main.onrender.com/assets/sports.svg`}
@@ -210,7 +254,11 @@ const NewIconCustomize: React.FC<TNewIconCustomize> = ({
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setNewIconSelected(`/travel.svg`)}
+              onClick={() =>
+                setNewIconSelected(
+                  `https://xtrack-main.onrender.com/assets/travel.svg`
+                )
+              }
             >
               <img
                 src={`https://xtrack-main.onrender.com/assets/travel.svg`}
@@ -220,7 +268,11 @@ const NewIconCustomize: React.FC<TNewIconCustomize> = ({
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setNewIconSelected(`/transportation.svg`)}
+              onClick={() =>
+                setNewIconSelected(
+                  `https://xtrack-main.onrender.com/assets/transportation.svg`
+                )
+              }
             >
               <img
                 src={`https://xtrack-main.onrender.com/assets/transportation.svg`}
@@ -230,7 +282,11 @@ const NewIconCustomize: React.FC<TNewIconCustomize> = ({
             </div>
             <div
               className="w-[40px] h-[40px] bg-[#8B8589] flex justify-center items-center rounded-full cursor-pointer"
-              onClick={() => setNewIconSelected(`/work.svg`)}
+              onClick={() =>
+                setNewIconSelected(
+                  `https://xtrack-main.onrender.com/assets/work.svg`
+                )
+              }
             >
               <img
                 src={`https://xtrack-main.onrender.com/assets/work.svg`}

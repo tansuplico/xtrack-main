@@ -133,7 +133,7 @@ const Dashboard = () => {
                         className={`w-[30px] h-[30px] xsm:w-[36px] xsm:h-[36px] flex justify-center items-center bg-[#${tr.categoryData.color}] rounded-full`}
                       >
                         <img
-                          src={`https://xtrack-main.onrender.com/assets${tr.categoryData.icon}`}
+                          src={tr.categoryData.icon}
                           alt={tr.categoryData.category}
                           className="w-[20px] h-[20px]"
                         />
