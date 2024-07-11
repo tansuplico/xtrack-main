@@ -27,8 +27,22 @@ interface EmailResponse {
   message: string;
 }
 
+app.get("/assets/*.svg", (req, res, next) => {
+  res.type("image/svg+xml");
+  next();
+});
+
 app.use(
   "/assets",
+  (req, res, next) => {
+    res.setHeader(
+      "Access-Control-Allow-Origin",
+      "https://xtrack-main.onrender.com"
+    );
+    res.setHeader("Cache-Control", "no-cache");
+    console.log(`Asset requested: ${req.path}`);
+    next();
+  },
   express.static(path.join(dirname, "assets"), {
     setHeaders: (res, path) => {
       if (path.endsWith(".svg")) {
@@ -43,6 +57,8 @@ app.use(
   cors({
     origin: "https://xtrack-main.onrender.com",
     credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
 

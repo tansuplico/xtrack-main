@@ -16,7 +16,16 @@ import { fileURLToPath } from "url";
 const app = express();
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
-app.use("/assets", express.static(path.join(dirname, "assets"), {
+app.get("/assets/*.svg", (req, res, next) => {
+    res.type("image/svg+xml");
+    next();
+});
+app.use("/assets", (req, res, next) => {
+    res.setHeader("Access-Control-Allow-Origin", "https://xtrack-main.onrender.com");
+    res.setHeader("Cache-Control", "no-cache");
+    console.log(`Asset requested: ${req.path}`);
+    next();
+}, express.static(path.join(dirname, "assets"), {
     setHeaders: (res, path) => {
         if (path.endsWith(".svg")) {
             res.setHeader("Content-Type", "image/svg+xml");
@@ -27,6 +36,8 @@ app.use(express.json());
 app.use(cors({
     origin: "https://xtrack-main.onrender.com",
     credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
 }));
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: false }));
