@@ -31,7 +31,9 @@ const Categories = () => {
   const [editCategory, setEditCategory] = useState(false);
   const [categoryToEdit, setCategoryToEdit] = useState("");
   const [colorSelected, setColorSelected] = useState("A52A2A");
-  const [iconSelected, setIconSelected] = useState("/rent.svg");
+  const [iconSelected, setIconSelected] = useState(
+    `https://xtrack-main.onrender.com/assets/rent.svg`
+  );
   const [newColorSelected, setNewColorSelected] = useState("");
   const [newIconSelected, setNewIconSelected] = useState("");
   const [categoryName, setCategoryName] = useState("");

@@ -20,9 +20,6 @@ const Sidebar: React.FC<SidebarProps> = ({
   const { data: getUser } = useGetUser();
   const [username, setUsername] = useState("");
   const [profileImage, setProfileImage] = useState("");
-  const [defaultImage, setDefaultImage] = useState(
-    `https://xtrack-main.onrender.com/assets/male-one.svg`
-  );
 
   const handleLogout = async () => {
     try {
@@ -32,50 +29,12 @@ const Sidebar: React.FC<SidebarProps> = ({
     }
   };
 
-  const fetchSvgAsBase64 = async (url: string): Promise<string> => {
-    const response = await fetch(url);
-    const blob = await response.blob();
-    const reader = new FileReader();
-
-    return new Promise((resolve, reject) => {
-      reader.onloadend = () => {
-        resolve(reader.result as string);
-      };
-      reader.onerror = () => {
-        reject(new Error("Failed to convert SVG to base64"));
-      };
-      reader.readAsDataURL(blob);
-    });
-  };
-
-  const fetchProfileImage = async (imagePath: string) => {
-    try {
-      const profileImageUrl = await fetchSvgAsBase64(imagePath);
-      setProfileImage(profileImageUrl);
-    } catch (error) {
-      console.error("Failed to fetch profile image", error);
-    }
-  };
-
-  const fetchDefaultProfileImage = async (imagePath: string) => {
-    try {
-      const profileImageUrl = await fetchSvgAsBase64(imagePath);
-      setDefaultImage(profileImageUrl);
-    } catch (error) {
-      console.error("Failed to fetch profile image", error);
-    }
-  };
-
-  useEffect(() => {
-    fetchDefaultProfileImage(defaultImage);
-  }, []);
-
   useEffect(() => {
     if (getUser) {
       setUsername(
         getUser[0].username[0].toUpperCase() + getUser[0].username.slice(1)
       );
-      fetchProfileImage(getUser[0].image);
+      setProfileImage(getUser[0].image);
     }
   }, [getUser]);
 
@@ -95,7 +54,11 @@ const Sidebar: React.FC<SidebarProps> = ({
 
           <div className="px-5 py-2 flex justify-start items-center gap-3 bg-[#1A222B] rounded-lg ">
             <img
-              src={profileImage ? profileImage : defaultImage}
+              src={
+                profileImage
+                  ? `httpS://xtrack-main.onrender.com/assets${profileImage}`
+                  : `httpS://xtrack-main.onrender.com/assets/male-one.svg`
+              }
               alt="profile"
               className="w-[50px] h-[50px] rounded-[25px]"
             />

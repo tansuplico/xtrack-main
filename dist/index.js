@@ -16,10 +16,14 @@ import { fileURLToPath } from "url";
 const app = express();
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
-// Resolve the path to the 'assets' directory
 const assetsPath = path.resolve(dirname, "assets");
-// Serve static files from the 'assets' directory
-app.use("/assets", express.static(assetsPath));
+app.use("/assets", express.static(assetsPath, {
+    setHeaders: (res, path) => {
+        if (path.endsWith(".svg")) {
+            res.setHeader("Content-Type", "image/svg+xml");
+        }
+    },
+}));
 app.use(express.json());
 app.use(cors({
     origin: "https://xtrack-main.onrender.com",
