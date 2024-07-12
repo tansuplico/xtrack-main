@@ -13,8 +13,6 @@ import categoryRouter from "./routes/categoriesRoutes.js";
 import transactionRouter from "./routes/transactionsRoutes.js";
 import walletRouter from "./routes/walletRoutes.js";
 import { fileURLToPath } from "url";
-import serveStatic from "serve-static";
-import mime from "mime";
 
 const app = express();
 const filename = fileURLToPath(import.meta.url);
@@ -30,7 +28,33 @@ interface EmailResponse {
 }
 
 const assetsPath = path.resolve(dirname, "assets");
-app.use("/assets", express.static(assetsPath));
+app.use(
+  "/assets",
+  express.static(assetsPath, {
+    setHeaders: (res, path) => {
+      if (path.endsWith(".svg")) {
+        res.setHeader("Content-Type", "image/svg+xml");
+      }
+    },
+  })
+);
+
+// Middleware to serve static assets
+app.get("/assets/:image", (req: Request, res: Response) => {
+  const { image } = req.params;
+  const filePath = path.join(dirname, "assets", image);
+
+  if (filePath.endsWith(".svg")) {
+    res.setHeader("Content-Type", "image/svg+xml");
+  }
+
+  res.sendFile(filePath, (err) => {
+    if (err) {
+      console.error(`Error serving file: ${filePath}`, err);
+      res.status(404).send("File not found");
+    }
+  });
+});
 
 app.use(express.json());
 app.use(
