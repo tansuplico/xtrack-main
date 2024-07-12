@@ -17,20 +17,7 @@ const app = express();
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
 const assetsPath = path.resolve(dirname, "assets");
-app.use("/assets", express.static(assetsPath, {
-    setHeaders: (res, path) => {
-        if (path.endsWith(".svg")) {
-            res.setHeader("Content-Type", "image/svg+xml");
-            res.setHeader("Cache-Control", "no-store, max-age=0");
-            res.setHeader("Pragma", "no-cache");
-            res.setHeader("Expires", "0");
-        }
-    },
-}));
-app.get("/assets/*.svg", (req, res, next) => {
-    res.type("image/svg+xml");
-    next();
-});
+app.use("/assets", express.static(assetsPath));
 app.use(express.json());
 app.use(cors({
     origin: "https://xtrack-main.onrender.com",
