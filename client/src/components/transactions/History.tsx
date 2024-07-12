@@ -54,7 +54,7 @@ const History: React.FC<THistory> = ({ toast, transactionArr }) => {
                     className={`w-[40px] h-[40px] md:w-[46px] md:h-[46px] flex justify-center items-center bg-[#${tr.categoryData.color}] rounded-full`}
                   >
                     <img
-                      src={`https://xtrack-main.onrender.com${tr.categoryData.icon}`}
+                      src={tr.categoryData.icon}
                       alt={tr.categoryData.category}
                       className="w-[25px] h-[25px] md:w-[30px] md:h-[30px]"
                     />
