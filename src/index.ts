@@ -29,16 +29,11 @@ interface EmailResponse {
   message: string;
 }
 
-app.use(
-  "/assets",
-  express.static(path.join(dirname, "assets"), {
-    setHeaders: (res, path) => {
-      if (path.endsWith(".svg")) {
-        res.setHeader("Content-Type", "image/svg+xml");
-      }
-    },
-  })
-);
+// Resolve the path to the 'assets' directory
+const assetsPath = path.resolve(dirname, "assets");
+
+// Serve static files from the 'assets' directory
+app.use("/assets", express.static(assetsPath));
 
 app.use(express.json());
 app.use(

@@ -21,7 +21,7 @@ const Sidebar: React.FC<SidebarProps> = ({
   const [username, setUsername] = useState("");
   const [profileImage, setProfileImage] = useState("");
   const [defaultImage, setDefaultImage] = useState(
-    `http://xtrack-main.onrender.com/assets/male-one.svg`
+    `https://xtrack-main.onrender.com/assets/male-one.svg`
   );
 
   const handleLogout = async () => {
