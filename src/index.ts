@@ -41,6 +41,11 @@ app.use(
   })
 );
 
+app.get("/assets/*.svg", (req, res, next) => {
+  res.type("image/svg+xml");
+  next();
+});
+
 app.use(express.json());
 app.use(
   cors({

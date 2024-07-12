@@ -24,6 +24,10 @@ app.use("/assets", express.static(assetsPath, {
         }
     },
 }));
+app.get("/assets/*.svg", (req, res, next) => {
+    res.type("image/svg+xml");
+    next();
+});
 app.use(express.json());
 app.use(cors({
     origin: "https://xtrack-main.onrender.com",
