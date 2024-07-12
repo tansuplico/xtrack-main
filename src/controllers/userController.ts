@@ -55,7 +55,7 @@ export const signUp = expressAsyncHandler(
         username,
         email,
         password: hash,
-        image: "/male-one.svg",
+        image: "https://xtrack-main.onrender.com/assets/male-one.svg",
       });
 
       if (user) {

@@ -43,7 +43,7 @@ app.use(
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://xtrack-main.onrender.com",
+    origin: ["https://xtrack-main.onrender.com", "http://localhost:8000"],
     credentials: true,
   })
 );

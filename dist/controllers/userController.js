@@ -44,7 +44,7 @@ export const signUp = expressAsyncHandler(async (req, res) => {
             username,
             email,
             password: hash,
-            image: "/male-one.svg",
+            image: "https://xtrack-main.onrender.com/assets/male-one.svg",
         });
         if (user) {
             const createWallet = await Wallet.create({

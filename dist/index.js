@@ -25,7 +25,7 @@ app.use("/assets", express.static(path.join(dirname, "assets"), {
 }));
 app.use(express.json());
 app.use(cors({
-    origin: "https://xtrack-main.onrender.com",
+    origin: ["https://xtrack-main.onrender.com", "http://localhost:8000"],
     credentials: true,
 }));
 app.use(cookieParser());
