@@ -21,6 +21,9 @@ app.use("/assets", express.static(assetsPath, {
     setHeaders: (res, path) => {
         if (path.endsWith(".svg")) {
             res.setHeader("Content-Type", "image/svg+xml");
+            res.setHeader("Cache-Control", "no-store, max-age=0");
+            res.setHeader("Pragma", "no-cache");
+            res.setHeader("Expires", "0");
         }
     },
 }));
