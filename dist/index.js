@@ -24,20 +24,6 @@ app.use("/assets", express.static(assetsPath, {
         }
     },
 }));
-// Middleware to serve static assets
-app.get("/assets/:image", (req, res) => {
-    const { image } = req.params;
-    const filePath = path.join(dirname, "assets", image);
-    if (filePath.endsWith(".svg")) {
-        res.setHeader("Content-Type", "image/svg+xml");
-    }
-    res.sendFile(filePath, (err) => {
-        if (err) {
-            console.error(`Error serving file: ${filePath}`, err);
-            res.status(404).send("File not found");
-        }
-    });
-});
 app.use(express.json());
 app.use(cors({
     origin: "https://xtrack-main.onrender.com",
