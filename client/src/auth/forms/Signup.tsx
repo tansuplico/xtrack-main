@@ -33,7 +33,7 @@ const Signup = () => {
   };
 
   return (
-    <div className="w-[45%] flex flex-col justify-center items-center text-center">
+    <div className="w-full md:w-[65%] lg:w-[45%] flex flex-col justify-center items-center text-center">
       <h1 className="inter-800 text-[1.7rem]">Register</h1>
       <h3 className="mb-5">
         Already have an account?
